@@ -1,0 +1,73 @@
+body{
+  background-color: aqua;
+}
+
+.menu{
+  position: relative;
+  height: 100vh;
+  top: 50%;
+  left: 55%;
+  width: 80%;
+  margin: auto;
+  
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 90%;
+  margin: auto;; /* Oraliqni o'zgartiring kerak bo'lsa */
+}
+
+
+/* Ekran genişliği 600 pikselden küçükse */
+@media screen and (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 50%;
+    margin: auto;; /
+}
+}
+
+
+/* Ekran genişliği 600 pikselden büyükse */
+@media screen and (min-width: 601px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin: auto;; /
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin: auto;; /
+}
+}
+
+
+
+
+
+
+.product{
+  text-align: center;
+}
+
+
+.Update{
+  width: 50%;
+  max-width: 80%;
+  margin: auto;
+  
+}
